@@ -12,7 +12,7 @@ class Explorer {
   });
 // int.parse(json['dob'])
   factory Explorer.fromJson(Map<String, dynamic> json) {
-    final String _age = (DateTime.now().year - 2001).toString();
+    final String _age = (DateTime.now().year - int.parse(json['dob'])).toString();
     return Explorer(
       name: json['name'],
       city: json['city'],

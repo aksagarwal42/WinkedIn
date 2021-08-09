@@ -87,6 +87,12 @@ class ExplorerPage extends StatelessWidget {
                           ],
                         ),
                       ),
+                      onSwipeRight: (Offset x) {
+                        print('Right');
+                      },
+                      onSwipeLeft: (Offset x) {
+                        print('Left');
+                      },
                     );
                   },
                 ).toList();
